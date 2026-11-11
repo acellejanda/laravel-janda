@@ -1,0 +1,18 @@
+.dashboard { min-height: 100vh; background: #f4f7f4; }
+.navbar { position: sticky; z-index: 20; top: 0; display: flex; align-items: center; gap: 34px; height: 72px; padding: 0 max(24px, calc((100vw - 1240px) / 2)); border-bottom: 1px solid #e8eee9; background: rgb(255 255 255 / 94%); backdrop-filter: blur(14px); }
+.brand { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 9px; color: #294a39; font-family: Manrope, 'DM Sans', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -1px; }
+.brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 12px; background: #e2efe5; color: #477b59; font-size: 22px; }
+.search-box { display: flex; width: min(300px, 28vw); height: 39px; align-items: center; gap: 10px; padding: 0 13px; border: 1px solid transparent; border-radius: 11px; background: #f4f7f4; color: #829087; transition: border-color .18s, background .18s; }
+.search-box:focus-within { border-color: #bdd5c2; background: #fff; }
+.search-box > span { font-size: 21px; line-height: 1; }
+.search-box input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: #34463a; font-size: 12px; }
+.search-box input::placeholder { color: #9aa59d; }
+.nav-links { display: flex; height: 100%; align-items: center; gap: 7px; margin-left: auto; }
+.nav-link { display: inline-flex; min-width: 92px; height: 39px; align-items: center; justify-content: center; gap: 8px; border-radius: 10px; color: #78867d; font-size: 12px; font-weight: 600; transition: color .18s, background .18s; }
+.nav-link:hover, .nav-link--active { background: #edf5ee; color: #3e7551; }
+.nav-link--active { font-weight: 700; }
+.nav-profile { display: inline-flex; align-items: center; gap: 9px; padding: 4px 0 4px 8px; border: 0; background: transparent; color: #526157; font-size: 12px; font-weight: 600; }
+.nav-profile:hover { color: #356746; }
+.post-avatar { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; border: 1px solid #dcebe0; border-radius: 14px; background: #e9f2eb; color: #4d7d5b; font-family: Manrope, 'DM Sans', sans-serif; font-size: 12px; font-weight: 800; }
+.post-avatar--small { width: 32px; height: 32px; border-radius: 11px; }
+@media (max-width: 680px) { .navbar { height: 62px; gap: 12px; padding: 0 14px; } .brand { gap: 7px; font-size: 19px; } .brand-mark { width: 30px; height: 30px; border-radius: 10px; } .search-box { width: auto; flex: 1; height: 36px; } .nav-links { display: none; } .nav-profile { padding-left: 0; } .nav-profile > span:last-child { display: none; } }
