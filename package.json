@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "npm --prefix frontend-react start",
-    "build": "npm --prefix frontend-react run build"
+    "start": "npm --prefix react-frontend start",
+    "build": "npm --prefix react-frontend run build"
   }
 }
